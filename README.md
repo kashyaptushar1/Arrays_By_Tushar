@@ -1,13 +1,11 @@
-Sure, here's a comprehensive GitHub README to explain the basics of arrays and 2D arrays:
+Sure, here's the README focused only on Java and C++:
 
 ---
-
-#
 
 # Arrays and 2D Arrays: A Comprehensive Guide
 
 ## Introduction
-This repository provides a basic understanding of arrays and 2D arrays, fundamental data structures in programming. Whether you're a beginner or looking to refresh your knowledge, this guide will cover the essentials and provide code examples in multiple languages.
+This repository provides a basic understanding of arrays and 2D arrays, fundamental data structures in programming. Whether you're a beginner or looking to refresh your knowledge, this guide will cover the essentials and provide code examples in Java and C++.
 
 ## Table of Contents
 1. [What is an Array?](#what-is-an-array)
@@ -23,8 +21,7 @@ This repository provides a basic understanding of arrays and 2D arrays, fundamen
     - [Modifying Elements](#modifying-elements-2d)
     - [Iterating through a 2D Array](#iterating-through-a-2d-array)
 5. [Code Examples](#code-examples)
-    - [Python](#python)
-    - [JavaScript](#javascript)
+    - [Java](#java)
     - [C++](#cpp)
 6. [Contributing](#contributing)
 7. [License](#license)
@@ -35,13 +32,9 @@ An array is a collection of elements, typically of the same type, stored in cont
 ## Basic Operations on Arrays
 
 ### Creating an Array
-#### Python
-```python
-array = [1, 2, 3, 4, 5]
-```
-#### JavaScript
-```javascript
-let array = [1, 2, 3, 4, 5];
+#### Java
+```java
+int[] array = {1, 2, 3, 4, 5};
 ```
 #### C++
 ```cpp
@@ -49,13 +42,9 @@ int array[] = {1, 2, 3, 4, 5};
 ```
 
 ### Accessing Elements
-#### Python
-```python
-print(array[0])  # Output: 1
-```
-#### JavaScript
-```javascript
-console.log(array[0]);  // Output: 1
+#### Java
+```java
+System.out.println(array[0]);  // Output: 1
 ```
 #### C++
 ```cpp
@@ -63,12 +52,8 @@ std::cout << array[0];  // Output: 1
 ```
 
 ### Modifying Elements
-#### Python
-```python
-array[0] = 10
-```
-#### JavaScript
-```javascript
+#### Java
+```java
 array[0] = 10;
 ```
 #### C++
@@ -77,18 +62,15 @@ array[0] = 10;
 ```
 
 ### Iterating through an Array
-#### Python
-```python
-for element in array:
-    print(element)
-```
-#### JavaScript
-```javascript
-array.forEach(element => console.log(element));
+#### Java
+```java
+for (int element : array) {
+    System.out.println(element);
+}
 ```
 #### C++
 ```cpp
-for(int i = 0; i < 5; i++) {
+for (int i = 0; i < 5; i++) {
     std::cout << array[i] << std::endl;
 }
 ```
@@ -99,21 +81,17 @@ A 2D array is an array of arrays. It can be visualized as a table with rows and 
 ## Basic Operations on 2D Arrays
 
 ### Creating a 2D Array
-#### Python
-```python
-array_2d = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
-```
-#### JavaScript
-```javascript
-let array_2d = [
-    [1, 2, 3],
-    [4, 5, 6],
-    [7, 8, 9]
-];
+#### Java
+```java
+int[][] array2D = {
+    {1, 2, 3},
+    {4, 5, 6},
+    {7, 8, 9}
+};
 ```
 #### C++
 ```cpp
-int array_2d[3][3] = {
+int array2D[3][3] = {
     {1, 2, 3},
     {4, 5, 6},
     {7, 8, 9}
@@ -121,118 +99,84 @@ int array_2d[3][3] = {
 ```
 
 ### Accessing Elements
-#### Python
-```python
-print(array_2d[0][0])  # Output: 1
-```
-#### JavaScript
-```javascript
-console.log(array_2d[0][0]);  // Output: 1
+#### Java
+```java
+System.out.println(array2D[0][0]);  // Output: 1
 ```
 #### C++
 ```cpp
-std::cout << array_2d[0][0];  // Output: 1
+std::cout << array2D[0][0];  // Output: 1
 ```
 
 ### Modifying Elements
-#### Python
-```python
-array_2d[0][0] = 10
-```
-#### JavaScript
-```javascript
-array_2d[0][0] = 10;
+#### Java
+```java
+array2D[0][0] = 10;
 ```
 #### C++
 ```cpp
-array_2d[0][0] = 10;
+array2D[0][0] = 10;
 ```
 
 ### Iterating through a 2D Array
-#### Python
-```python
-for row in array_2d:
-    for element in row:
-        print(element)
-```
-#### JavaScript
-```javascript
-array_2d.forEach(row => {
-    row.forEach(element => console.log(element));
-});
+#### Java
+```java
+for (int[] row : array2D) {
+    for (int element : row) {
+        System.out.println(element);
+    }
+}
 ```
 #### C++
 ```cpp
-for(int i = 0; i < 3; i++) {
-    for(int j = 0; j < 3; j++) {
-        std::cout << array_2d[i][j] << std::endl;
+for (int i = 0; i < 3; i++) {
+    for (int j = 0; j < 3; j++) {
+        std::cout << array2D[i][j] << std::endl;
     }
 }
 ```
 
 ## Code Examples
 
-### Python
-```python
-# Creating an array
-array = [1, 2, 3, 4, 5]
+### Java
+```java
+public class ArrayExamples {
+    public static void main(String[] args) {
+        // Creating an array
+        int[] array = {1, 2, 3, 4, 5};
 
-# Accessing an element
-print(array[0])  # Output: 1
+        // Accessing an element
+        System.out.println(array[0]);  // Output: 1
 
-# Modifying an element
-array[0] = 10
+        // Modifying an element
+        array[0] = 10;
 
-# Iterating through the array
-for element in array:
-    print(element)
+        // Iterating through the array
+        for (int element : array) {
+            System.out.println(element);
+        }
 
-# Creating a 2D array
-array_2d = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+        // Creating a 2D array
+        int[][] array2D = {
+            {1, 2, 3},
+            {4, 5, 6},
+            {7, 8, 9}
+        };
 
-# Accessing an element
-print(array_2d[0][0])  # Output: 1
+        // Accessing an element
+        System.out.println(array2D[0][0]);  // Output: 1
 
-# Modifying an element
-array_2d[0][0] = 10
+        // Modifying an element
+        array2D[0][0] = 10;
 
-# Iterating through the 2D array
-for row in array_2d:
-    for element in row:
-        print(element)
-```
-
-### JavaScript
-```javascript
-// Creating an array
-let array = [1, 2, 3, 4, 5];
-
-// Accessing an element
-console.log(array[0]);  // Output: 1
-
-// Modifying an element
-array[0] = 10;
-
-// Iterating through the array
-array.forEach(element => console.log(element));
-
-// Creating a 2D array
-let array_2d = [
-    [1, 2, 3],
-    [4, 5, 6],
-    [7, 8, 9]
-];
-
-// Accessing an element
-console.log(array_2d[0][0]);  // Output: 1
-
-// Modifying an element
-array_2d[0][0] = 10;
-
-// Iterating through the 2D array
-array_2d.forEach(row => {
-    row.forEach(element => console.log(element));
-});
+        // Iterating through the 2D array
+        for (int[] row : array2D) {
+            for (int element : row) {
+                System.out.println(element);
+            }
+        }
+    }
+}
 ```
 
 ### C++
@@ -250,27 +194,27 @@ int main() {
     array[0] = 10;
 
     // Iterating through the array
-    for(int i = 0; i < 5; i++) {
+    for (int i = 0; i < 5; i++) {
         std::cout << array[i] << std::endl;
     }
 
     // Creating a 2D array
-    int array_2d[3][3] = {
+    int array2D[3][3] = {
         {1, 2, 3},
         {4, 5, 6},
         {7, 8, 9}
     };
 
     // Accessing an element
-    std::cout << array_2d[0][0] << std::endl;  // Output: 1
+    std::cout << array2D[0][0] << std::endl;  // Output: 1
 
     // Modifying an element
-    array_2d[0][0] = 10;
+    array2D[0][0] = 10;
 
     // Iterating through the 2D array
-    for(int i = 0; i < 3; i++) {
-        for(int j = 0; j < 3; j++) {
-            std::cout << array_2d[i][j] << std::endl;
+    for (int i = 0; i < 3; i++) {
+        for (int j = 0; j < 3; j++) {
+            std::cout << array2D[i][j] << std::endl;
         }
     }
 
