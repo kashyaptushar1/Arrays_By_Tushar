@@ -1,5 +1,4 @@
- Hello I am Tushar Kashyap
-# Arrays and 2D Arrays: A Comprehensive Guide
+# Arrays and 2D Arrays: A Comprehensive Guide by Tushar Kashyap
 
 ## Introduction
 This repository provides a basic understanding of arrays and 2D arrays, fundamental data structures in programming. Whether you're a beginner or looking to refresh your knowledge, this guide will cover the essentials and provide code examples in Java and C++.
