@@ -1,4 +1,4 @@
-## Hello I am Tushar Kashyap
+ Hello I am Tushar Kashyap
 # Arrays and 2D Arrays: A Comprehensive Guide
 
 ## Introduction
