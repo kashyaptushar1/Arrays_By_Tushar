@@ -1,7 +1,3 @@
-Sure, here's the README focused only on Java and C++:
-
----
-
 # Arrays and 2D Arrays: A Comprehensive Guide
 
 ## Introduction
@@ -14,12 +10,14 @@ This repository provides a basic understanding of arrays and 2D arrays, fundamen
     - [Accessing Elements](#accessing-elements)
     - [Modifying Elements](#modifying-elements)
     - [Iterating through an Array](#iterating-through-an-array)
+    - [Taking Input for an Array](#taking-input-for-an-array)
 3. [What is a 2D Array?](#what-is-a-2d-array)
 4. [Basic Operations on 2D Arrays](#basic-operations-on-2d-arrays)
     - [Creating a 2D Array](#creating-a-2d-array)
     - [Accessing Elements](#accessing-elements-2d)
     - [Modifying Elements](#modifying-elements-2d)
     - [Iterating through a 2D Array](#iterating-through-a-2d-array)
+    - [Taking Input for a 2D Array](#taking-input-for-a-2d-array)
 5. [Code Examples](#code-examples)
     - [Java](#java)
     - [C++](#cpp)
@@ -72,6 +70,56 @@ for (int element : array) {
 ```cpp
 for (int i = 0; i < 5; i++) {
     std::cout << array[i] << std::endl;
+}
+```
+
+### Taking Input for an Array
+#### Java
+```java
+import java.util.Scanner;
+
+public class ArrayInputExample {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter the size of the array: ");
+        int size = scanner.nextInt();
+        int[] array = new int[size];
+
+        System.out.println("Enter " + size + " elements:");
+        for (int i = 0; i < size; i++) {
+            array[i] = scanner.nextInt();
+        }
+
+        System.out.println("Array elements are:");
+        for (int element : array) {
+            System.out.println(element);
+        }
+    }
+}
+```
+#### C++
+```cpp
+#include <iostream>
+
+int main() {
+    int size;
+    std::cout << "Enter the size of the array: ";
+    std::cin >> size;
+
+    int* array = new int[size];
+    std::cout << "Enter " << size << " elements:" << std::endl;
+
+    for (int i = 0; i < size; i++) {
+        std::cin >> array[i];
+    }
+
+    std::cout << "Array elements are:" << std::endl;
+    for (int i = 0; i < size; i++) {
+        std::cout << array[i] << std::endl;
+    }
+
+    delete[] array;
+    return 0;
 }
 ```
 
@@ -136,6 +184,75 @@ for (int i = 0; i < 3; i++) {
 }
 ```
 
+### Taking Input for a 2D Array
+#### Java
+```java
+import java.util.Scanner;
+
+public class Array2DInputExample {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter the number of rows: ");
+        int rows = scanner.nextInt();
+        System.out.print("Enter the number of columns: ");
+        int columns = scanner.nextInt();
+        int[][] array2D = new int[rows][columns];
+
+        System.out.println("Enter elements for the 2D array:");
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < columns; j++) {
+                array2D[i][j] = scanner.nextInt();
+            }
+        }
+
+        System.out.println("2D Array elements are:");
+        for (int[] row : array2D) {
+            for (int element : row) {
+                System.out.println(element);
+            }
+        }
+    }
+}
+```
+#### C++
+```cpp
+#include <iostream>
+
+int main() {
+    int rows, columns;
+    std::cout << "Enter the number of rows: ";
+    std::cin >> rows;
+    std::cout << "Enter the number of columns: ";
+    std::cin >> columns;
+
+    int** array2D = new int*[rows];
+    for (int i = 0; i < rows; i++) {
+        array2D[i] = new int[columns];
+    }
+
+    std::cout << "Enter elements for the 2D array:" << std::endl;
+    for (int i = 0; i < rows; i++) {
+        for (int j = 0; j < columns; j++) {
+            std::cin >> array2D[i][j];
+        }
+    }
+
+    std::cout << "2D Array elements are:" << std::endl;
+    for (int i = 0; i < rows; i++) {
+        for (int j = 0; j < columns; j++) {
+            std::cout << array2D[i][j] << std::endl;
+        }
+    }
+
+    for (int i = 0; i < rows; i++) {
+        delete[] array2D[i];
+    }
+    delete[] array2D;
+
+    return 0;
+}
+```
+
 ## Code Examples
 
 ### Java
@@ -156,11 +273,29 @@ public class ArrayExamples {
             System.out.println(element);
         }
 
+        // Taking input for an array
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter the size of the array: ");
+        int size = scanner.nextInt();
+        int[] inputArray = new int[size];
+
+        System.out.println("Enter " + size + " elements:");
+        for (int i = 0; i < size; i++) {
+            inputArray[i] = scanner.nextInt();
+        }
+
+        System.out.println("Array elements are:");
+        for (int element : inputArray) {
+            System.out.println(element);
+        }
+
         // Creating a 2D array
         int[][] array2D = {
             {1, 2, 3},
             {4, 5, 6},
-            {7, 8, 9}
+            {7, 8, 
+
+9}
         };
 
         // Accessing an element
@@ -171,6 +306,27 @@ public class ArrayExamples {
 
         // Iterating through the 2D array
         for (int[] row : array2D) {
+            for (int element : row) {
+                System.out.println(element);
+            }
+        }
+
+        // Taking input for a 2D array
+        System.out.print("Enter the number of rows: ");
+        int rows = scanner.nextInt();
+        System.out.print("Enter the number of columns: ");
+        int columns = scanner.nextInt();
+        int[][] inputArray2D = new int[rows][columns];
+
+        System.out.println("Enter elements for the 2D array:");
+        for (int i = 0; i < rows; i++) {
+            for (int j = 0; j < columns; j++) {
+                inputArray2D[i][j] = scanner.nextInt();
+            }
+        }
+
+        System.out.println("2D Array elements are:");
+        for (int[] row : inputArray2D) {
             for (int element : row) {
                 System.out.println(element);
             }
@@ -198,6 +354,25 @@ int main() {
         std::cout << array[i] << std::endl;
     }
 
+    // Taking input for an array
+    int size;
+    std::cout << "Enter the size of the array: ";
+    std::cin >> size;
+
+    int* inputArray = new int[size];
+    std::cout << "Enter " << size << " elements:" << std::endl;
+
+    for (int i = 0; i < size; i++) {
+        std::cin >> inputArray[i];
+    }
+
+    std::cout << "Array elements are:" << std::endl;
+    for (int i = 0; i < size; i++) {
+        std::cout << inputArray[i] << std::endl;
+    }
+
+    delete[] inputArray;
+
     // Creating a 2D array
     int array2D[3][3] = {
         {1, 2, 3},
@@ -217,6 +392,37 @@ int main() {
             std::cout << array2D[i][j] << std::endl;
         }
     }
+
+    // Taking input for a 2D array
+    int rows, columns;
+    std::cout << "Enter the number of rows: ";
+    std::cin >> rows;
+    std::cout << "Enter the number of columns: ";
+    std::cin >> columns;
+
+    int** inputArray2D = new int*[rows];
+    for (int i = 0; i < rows; i++) {
+        inputArray2D[i] = new int[columns];
+    }
+
+    std::cout << "Enter elements for the 2D array:" << std::endl;
+    for (int i = 0; i < rows; i++) {
+        for (int j = 0; j < columns; j++) {
+            std::cin >> inputArray2D[i][j];
+        }
+    }
+
+    std::cout << "2D Array elements are:" << std::endl;
+    for (int i = 0; i < rows; i++) {
+        for (int j = 0; j < columns; j++) {
+            std::cout << inputArray2D[i][j] << std::endl;
+        }
+    }
+
+    for (int i = 0; i < rows; i++) {
+        delete[] inputArray2D[i];
+    }
+    delete[] inputArray2D;
 
     return 0;
 }
