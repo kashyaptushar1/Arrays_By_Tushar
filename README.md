@@ -21,8 +21,7 @@ This repository provides a basic understanding of arrays and 2D arrays, fundamen
 5. [Code Examples](#code-examples)
     - [Java](#java)
     - [C++](#cpp)
-6. [Contributing](#contributing)
-7. [License](#license)
+6. [Connect with Me](#Connect-with-Me)
 
 ## What is an Array?
 An array is a collection of elements, typically of the same type, stored in contiguous memory locations. Arrays are used to store multiple values in a single variable, which can be accessed by their index. The primary advantages of arrays include:
@@ -484,10 +483,13 @@ int main() {
 ## Contributing
 Contributions are welcome! If you have any improvements or additional examples to add, please fork this repository and submit a pull request.
 
-## License
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+## Connect with Me
+If you have any questions, suggestions, or just want to connect, feel free to reach out!
 
+- [GitHub](https://github.com/kashyaptushar1)
+- [Instagram](https://instagram.com/i_am_tushar2709)
+- [LeetCode](https://leetcode.com/u/Pro_tushar/)
 ---
 
 Feel free to modify and extend this README as per your needs!
-<a href="https://instagram.com/i_am_tushar2709" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="i_am_tushar2709" height="30" width="40" /></a>
+
