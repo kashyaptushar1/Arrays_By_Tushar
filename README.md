@@ -490,3 +490,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ---
 
 Feel free to modify and extend this README as per your needs!
+<a href="https://instagram.com/i_am_tushar2709" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="i_am_tushar2709" height="30" width="40" /></a>
