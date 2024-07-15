@@ -14,8 +14,8 @@ This repository provides a basic understanding of arrays and 2D arrays, fundamen
 3. [What is a 2D Array?](#what-is-a-2d-array)
 4. [Basic Operations on 2D Arrays](#basic-operations-on-2d-arrays)
     - [Creating a 2D Array](#creating-a-2d-array)
-    - [Accessing Elements](#accessing-elements-2d)
-    - [Modifying Elements](#modifying-elements-2d)
+    - [Accessing Elements in 2D Array](#accessing-elements-2d)
+    - [Modifying Elements in 2D Array](#modifying-elements-2d)
     - [Iterating through a 2D Array](#iterating-through-a-2d-array)
     - [Taking Input for a 2D Array](#taking-input-for-a-2d-array)
 5. [Code Examples](#code-examples)
@@ -190,7 +190,7 @@ for (int i = 0; i < 3; i++) {
 }
 ```
 
-### Accessing Elements
+### Accessing Elements in 2D Array
 Elements in a 2D array are accessed using their row and column indices.
 
 #### Java
@@ -202,7 +202,7 @@ System.out.println(array2D[0][0]);  // Output: 1
 std::cout << array2D[0][0];  // Output: 1
 ```
 
-### Modifying Elements
+### Modifying Elements in 2D Array
 Elements in a 2D array can be modified by assigning a new value to a specific row and column index.
 
 #### Java
