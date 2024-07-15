@@ -14,7 +14,7 @@ This repository provides a basic understanding of arrays and 2D arrays, fundamen
 3. [What is a 2D Array?](#what-is-a-2d-array)
 4. [Basic Operations on 2D Arrays](#basic-operations-on-2d-arrays)
     - [Creating a 2D Array](#creating-a-2d-array)
-    - [Accessing Elements in 2D Array](#accessing-elements-2d)
+    - [Accessing Elements in 2D Array](#accessing-elements-in-2D-Array)
     - [Modifying Elements in 2D Array](#modifying-elements-2d)
     - [Iterating through a 2D Array](#iterating-through-a-2d-array)
     - [Taking Input for a 2D Array](#taking-input-for-a-2d-array)
