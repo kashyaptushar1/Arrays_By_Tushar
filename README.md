@@ -22,11 +22,11 @@ This repository provides a basic understanding of arrays and 2D arrays, fundamen
     - [Java](#java)
     - [C++](#cpp)
 6. [Leetcode question set](#Connect-with-Me)
-7.    - [Basic Question]()
+      - [Basic Question]()
       - [Intermediate Question]()
       - [Advanced Question]()
-8.
-9. [Connect with Me](#Connect-with-Me)
+  
+7. [Connect with Me](#Connect-with-Me)
 
 ## What is an Array?
 An array is a collection of elements, typically of the same type, stored in contiguous memory locations. Arrays are used to store multiple values in a single variable, which can be accessed by their index. The primary advantages of arrays include:
