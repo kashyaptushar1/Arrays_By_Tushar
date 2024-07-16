@@ -22,7 +22,7 @@ This repository provides a basic understanding of arrays and 2D arrays, fundamen
     - [Java](#java)
     - [C++](#cpp)
 6. [Leetcode question set](#Connect-with-Me)
-      - [Basic Question](#Array_01/src)
+      - [Basic Question](https://github.com/kashyaptushar1/Arrays_By_Tushar/tree/main/Array_01/src)
       - [Intermediate Question]()
       - [Advanced Question]()
   
