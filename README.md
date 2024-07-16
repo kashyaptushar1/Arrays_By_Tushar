@@ -23,8 +23,8 @@ This repository provides a basic understanding of arrays and 2D arrays, fundamen
     - [C++](#cpp)
 6. [Leetcode question set](#Connect-with-Me)
       - [Basic Question](https://github.com/kashyaptushar1/Arrays_By_Tushar/tree/main/Array_01/src)
-      - [Intermediate Question]()
-      - [Advanced Question]()
+      - [Intermediate Question](https://github.com/kashyaptushar1/Arrays_By_Tushar/tree/main/Array_02/src)
+      - [Advanced Question](https://github.com/kashyaptushar1/Arrays_By_Tushar/tree/main/Array_03/src)
   
 7. [Connect with Me](#Connect-with-Me)
 
