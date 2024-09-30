@@ -26,8 +26,13 @@ This repository provides a basic understanding of arrays and 2D arrays, fundamen
       - [Intermediate Question](https://github.com/kashyaptushar1/Arrays_By_Tushar/tree/main/Array_02/src)
       - [Advanced Question](https://github.com/kashyaptushar1/Arrays_By_Tushar/tree/main/Array_03/src)
   
-7. [Connect with Me](#Connect-with-Me)
-
+7. [Number System Conversion](#number-system-conversion)
+   - [Decimal to Binary](#decimal-to-binary)
+   - [Binary to Decimal](#binary-to-decimal)
+   - [Decimal to Hexadecimal](#decimal-to-hexadecimal)
+   - [Hexadecimal to Decimal](#hexadecimal-to-decimal)
+   - 
+8. [Connect with Me](#Connect-with-Me)
 ## What is an Array?
 An array is a collection of elements, typically of the same type, stored in contiguous memory locations. Arrays are used to store multiple values in a single variable, which can be accessed by their index. The primary advantages of arrays include:
 - **Efficient access**: Elements can be accessed in constant time using their index.
@@ -483,6 +488,86 @@ int main() {
 
     return 0;
 }
+```
+## Number System Conversion
+
+Number system conversion is a fundamental aspect of programming, especially when working with different bases like binary, decimal, hexadecimal, and octal.
+
+### Decimal to Binary
+You can convert a decimal number to its binary equivalent using built-in functions or manually.
+
+#### Java
+```java
+int decimal = 10;
+String binary = Integer.toBinaryString(decimal);
+System.out.println(binary); // Output: 1010
+```
+
+#### C++
+```cpp
+#include <iostream>
+#include <bitset>
+
+int decimal = 10;
+std::cout << std::bitset<8>(decimal);  // Output: 00001010
+```
+
+### Binary to Decimal
+Convert binary numbers back to decimal format.
+
+#### Java
+```java
+String binary = "1010";
+int decimal = Integer.parseInt(binary, 2);
+System.out.println(decimal); // Output: 10
+```
+
+#### C++
+```cpp
+#include <iostream>
+#include <bitset>
+
+std::string binary = "1010";
+int decimal = std::bitset<8>(binary).to_ulong();
+std::cout << decimal;  // Output: 10
+```
+
+### Decimal to Hexadecimal
+Convert decimal numbers to hexadecimal.
+
+#### Java
+```java
+int decimal = 255;
+String hex = Integer.toHexString(decimal);
+System.out.println(hex); // Output: ff
+```
+
+#### C++
+```cpp
+#include <iostream>
+#include <iomanip>
+
+int decimal = 255;
+std::cout << std::hex << decimal;  // Output: ff
+```
+
+### Hexadecimal to Decimal
+Convert hexadecimal numbers back to decimal.
+
+#### Java
+```java
+String hex = "ff";
+int decimal = Integer.parseInt(hex, 16);
+System.out.println(decimal); // Output: 255
+```
+
+#### C++
+```cpp
+#include <iostream>
+
+std::string hex = "ff";
+int decimal = std::stoi(hex, 0, 16);
+std::cout << decimal;  // Output: 255
 ```
 
 ## Contributing
